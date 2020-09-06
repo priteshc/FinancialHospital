@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignTop="@id/menu"
+            android:background="@drawable/floatlabel1"
+            android:layout_alignParentRight="true"
+            android:elevation="7dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="1"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selected1"
+            android:id="@+id/menu"
+            android:src="@drawable/dots_vertical"
+            android:layout_marginTop="120dp"
+            />
+
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selected1"
+            android:layout_marginRight="5dp"
+            android:id="@+id/right"
+            android:src="@drawable/arrow_right"
+            />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selected1"
+            android:id="@+id/left"
+            android:src="@drawable/arrow_left"
+            />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="#fff"
+            app:tabSelectedTextColor="#000"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click me"
+            android:id="@+id/my"
+            android:visibility="gone"
+            />
+
+        <RadioGroup
+            android:id="@+id/button_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:checked="true"
+                android:button="@android:color/transparent"
+                android:text="your info"
+                android:background="@drawable/myselector"
+                android:textColor="#ffffff"
+                android:padding="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:button="@android:color/transparent"
+                android:text="know you better"
+                android:background="@drawable/myselector"
+                android:textColor="#ffffff"
+                android:padding="2dp"
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:button="@android:color/transparent"
+                android:text="know you risk"
+                android:background="@drawable/myselector"
+                android:padding="2dp"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:button="@android:color/transparent"
+                android:text="your family"
+                android:background="@drawable/myselector"
+                android:padding="2dp"
+                android:textColor="#ffffff" />
+
+        </RadioGroup>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_below="@+id/button_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/cardview_light_background"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_to_cart_floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:backgroundTint="#2BC016"
+            android:src="@drawable/message_processing_outline"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="130dp"
+            android:layout_alignTop="@id/add_to_cart_floating_action_button"
+            android:background="@drawable/floatlabel"
+            android:layout_alignParentRight="true"
+            android:elevation="7dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
